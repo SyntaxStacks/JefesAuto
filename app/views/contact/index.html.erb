@@ -1,0 +1,35 @@
+<div class='row margin-top60px'>
+  <div class='span6'>
+    <div class='black-box shadow padding10px'>
+      <h1>Come See Us</h1>
+      <span>Jefe's Auto<br>634 Old Highway 90 W<br>San Antonio, TX 78237<br></span>
+      <span>Phone: 210.889.1511<br>Fax: 210.300.5800<br>Email:ElJefe@jefesauto.com</span>
+    </div><!-- .black-box .shadow .padding10px' -->
+  </div><!-- .span6 -->
+  <div class='span6'>
+    <div class='black-box shadow padding10px'>
+      <%= image_tag 'contact_us/map.png', :width => '100%' %>
+    </div><!-- .black-box .shadow .padding10px' -->
+  </div><!-- .span6 --> 
+</div><!-- .row -->
+
+<div class='row margin-top40px'>
+  <div class='span6'>
+    <div class='black-box shadow padding10px'>
+      <%= form_tag(:controller => 'home', :action => 'send_quote', :method => 'post') do%>
+        <%= text_field_tag 'email', nil, :placeholder => 'e-mail address' %>
+        <%= text_field_tag 'name', nil, :placeholder => 'full name' %>
+        <%= text_field_tag 'phone number', nil, :placeholder => 'phone number' %>
+        <%= text_area_tag 'body' %>
+        <%= submit_tag 'Submit' %>
+      <%end%>
+    </div><!-- .black-box .shadow .padding10px' -->
+  </div><!-- .span6 -->
+  <div class='span6'>
+    <div class='black-box shadow padding10px'>
+      <h1> Say Hello </h1>
+      <%= link_to image_tag( 'home/twitter.png'), 'https://twitter.com/ElJefeEduardo'  %>
+      <%= link_to image_tag( 'home/facebook.png'), 'https://www.facebook.com/JefesAutoinspections' %>
+    </div><!-- .black-box .shadow .padding10px'-->
+  </div><!-- .span6 -->
+</div><!-- .row -->

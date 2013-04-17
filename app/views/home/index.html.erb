@@ -1,0 +1,61 @@
+<div class='row margin-top40px'>
+  <div class='span7'>
+    <div class='black-box shadow padding10px'>
+      <%= image_tag('home/car_lot.png', :width => '100%' ) %>
+    </div><!-- .black-box .shadow .padding10px -->
+  </div><!-- .span7 -->
+  <div class='span5'>
+    <div class='black-box shadow padding10px'>
+      <h1>Our Work Stands Out.</h1>
+      <span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat ipsum at arcu blandit dignissim ut ac tortor. Praesent ultrices blandit laoreet. Pellentesque fermentum auctor ipsum, nec ultricies purus euismod id. Curabitur id neque nisl. Proin pellentesque varius lacus, at suscipit lectus tempus ut. Cras venenatis sollicitudin sapien, at sodales ipsum sagittis fringilla. Donec at magna nunc. Aliquam ullamcorper ante id odio sagittis et consectetur purus egestas. Curabitur a felis at libero tincidunt fermentum. Maecenas eros nisl, vestibulum sed pharetra a, volutpat a neque. Donec sed est eget purus luctus consectetur sit amet eu dolor. Nam in augue sit amet enim ornare ultricies ac et magna. Sed a quam ullamcorper purus imperdiet facilisis. Aliquam auctor leo elementum odio viverra pharetra a vitae felis. Aenean fermentum placerat ante, vel hendrerit nulla semper nec.
+      </span>
+    </div>
+  </div><!-- span5 -->
+</div><!-- row -->
+<div class='row margin-top50px'> 
+  <div class='span4'>
+    <div class='black-box shadow padding10px'>
+      <h1>Tweets</h1>
+      <div id="twitter_div"><ul id="twitter_update_list"><li>&nbsp;</li></ul></div>
+    </div><!-- .black-box .shadow .padding10px -->
+    <div class='row-fluid padding20px center'>
+      <%= link_to image_tag( 'home/twitter.png'), 'https://twitter.com/ElJefeEduardo'  %>
+      <%= link_to image_tag( 'home/facebook.png'), 'https://www.facebook.com/JefesAutoinspections' %>
+    </div><!--.row-fluid -->
+  </div><!-- .span4 -->
+  <div class='span4'>
+    <div class='black-box shadow padding10px'>
+      <div class="row-fluid">
+        <div class='span6'>
+          <%= image_tag 'home/free_tow.png' %>
+        </div><!-- .span6 -->
+        <div class='span6'>
+          <span>Free Download With Discount </span>
+        </div><!-- .span6 -->
+      </div><!-- .row-fluid -->
+      <span>Click on the icon above for a free PDF download. Print it, put it in your vehicle, and when the time comes for you to call on Jefe's... All of the info you need will be right there at your fingertips. And when you arrive, be sure to show us and we'll give you a 15% discount.
+      Click on the icon above for a free PDF download. Print it, put it in your vehicle, and when the time comes for you to call on Jefe's... All of the info you need will be right there at 
+      </span>
+    </div><!-- .black-box .shadow .padding20px -->    
+  </div><!-- .span2 --> 
+  <div class='span4'>
+    <div class='black-box shadow padding20px center'>
+      <strong>Need a Free Quote?</strong></br>
+      <strong> Leave Your Information</strong</br>
+      <strong> And We'll Be In Touch.</strong></br></br>
+	<%= form_tag(:controller => 'home', :action => 'send_quote', :method => 'post') do%>
+	  <%= text_field_tag 'email', nil, :placeholder => 'e-mail address' %>
+	  <%= text_field_tag 'name', nil, :placeholder => 'full name' %>
+	  <%= text_field_tag 'phone_number', nil, :placeholder => 'phone number' %>
+	  <%= text_field_tag 'zip', nil, :placeholder => 'zip code' %>
+	  <%= submit_tag 'Submit' %>
+	<%end%>
+      <span>
+      </span>
+    </div><!-- .black-box .shadow .padding20px -->
+  </div><!-- .span5 -->
+</div><!-- .row -->
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline/jefesauto.json?callback=twitterCallback2&count=3"></script>
+ 

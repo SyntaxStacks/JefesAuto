@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jefe's Paint & Bodywork</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div id="header">
+      <%=image_tag("home/header_logo.png") %>
+    </div>
+  </div>
+  <div class='row-fluid red-box shadow' id='navi-bar'>
+    <div class='span2 center  offset1'>
+      <%= link_to "Home", :controller => :home , :action => :index %>  
+    </div><!-- .span2 offset1 -->
+    <div class='span2 center '>
+      <%= link_to "About Us", :controller => :about , :action => :index %>  
+    </div><!-- .span2 --> 
+    <div class='span2 center '>
+      <%= link_to "Our Work", :controller => :work , :action => :index %>  
+    </div><!-- .span2 -->
+    <div class='span2 center '>
+      <%= link_to "Testimonials", :controller => :testimonial , :action => :index %>  
+    </div><!-- .span2 -->
+    <div class='span2 center '>
+      <%= link_to "Contact Us", :controller => :contact , :action => :index %> 
+    </div><!-- .span2 -->
+  </div><!-- .row-fluid-->
+  <%= yield %>
+  
+  <div class="row margin-top40px" id="footer">
+    <span>
+      <%= link_to "Home", :controller => :home , :action => :index %> | 
+      <%= link_to "About Us", :controller => :about , :action => :index %> | 
+      <%= link_to "Our Work", :controller => :work , :action => :index %> | 
+      <%= link_to "Testimonials", :controller => :testimonial , :action => :index %> | 
+      <%= link_to "Contact Us", :controller => :contact , :action => :index %> 
+    </span>
+    <br>
+    <span>JEFE's Auto 2013 ALL RIGHTS RESERVED</span> 
+ </div>
+
+</div>
+</body>
+</html>

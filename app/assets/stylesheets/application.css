@@ -1,0 +1,86 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ *= require bootstrap
+ *= require bootstrap-responsive
+ */
+
+a:link {color:#FFF !important;}      /* unvisited link */
+a:visited {color:#FFF;}  /* visited link */
+a:hover {color:#FFF;}  /* mouse over link */
+a:active {color:#FFF;}  /* selected link */
+
+html, body {
+  background-color: #ee1c25 !important;
+}
+
+.center {
+  text-align: center;
+}
+
+#header {
+  text-align: center;
+  padding: 25px 0px 45px 0px;
+}
+
+#navi-bar{
+  padding-top: 15px;
+}
+
+#footer {
+  background-color: #bd161d;
+  text-align: center;
+  color: #000;
+}
+
+.black-box {
+  background-color: #333333;
+  border-top:4px solid #808080;
+  border-left:4px solid #5a5a5a;
+  border-right:4px solid #232323;
+  border-bottom:4px solid #1a1a1a;
+  color: #ebebeb;
+}
+
+.red-box {
+  background-color: #bd161d;
+}
+
+.padding10px {
+  padding: 10px 10px 10px 10px;
+}
+
+.padding20px {
+  padding: 20px 20px 20px 20px;
+}
+
+.margin-top40px {
+  margin-top: 40px;
+}
+
+.margin-top50px {
+  margin-top: 50px;
+}
+
+.margin-top60px {
+  margin-top: 60px;
+}
+
+.shadow {
+  -moz-box-shadow: 3px 3px 4px #000;
+  -webkit-box-shadow: 3px 3px 4px #000;
+  box-shadow: 3px 3px 4px #000;
+  /* For IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+  /* For IE 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}

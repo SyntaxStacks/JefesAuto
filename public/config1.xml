@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CCGallery>
+  <file type="photo">
+    <cover>assets/our_work/repair-cover.jpg</cover>
+    <thumb>assets/out_work/repair-thumb.jpg</thumb>
+    <source>assets/our_work/repair.jpg</source>
+    <title>Repair Photo</title>
+    <description>Yo</description>
+  </file>
+
+  <file type="photo">
+    <cover>assets/our_work/repair2-cover.jpg</cover>
+    <thumb>assets/out_work/repair2-thumb.jpg</thumb>
+    <source>assets/our_work/repair2.jpg</source>
+    <title>Repair Photo</title>
+    <description>Yo</description>
+  </file>
+
+  <file type="photo">
+    <cover>assets/our_work/repair-cover3.jpg</cover>
+    <thumb>assets/out_work/repair-thumb3.jpg</thumb>
+    <source>assets/our_work/repair3.jpg</source>
+    <title>Repair Photo</title>
+    <description>Yo</description>
+  </file>
+
+  <file type="photo">
+    <cover>assets/our_work/repair4-cover.jpg</cover>
+    <thumb>assets/out_work/repair4-thumb.jpg</thumb>
+    <source>assets/our_work/repair4.jpg</source>
+    <title>Repair Photo</title>
+    <description>Yo</description>
+  </file>
+
+  <file type="photo">
+    <cover>assets/our_work/repair5-cover.jpg</cover>
+    <thumb>assets/out_work/repair5-thumb.jpg</thumb>
+    <source>assets/our_work/repair5.jpg</source>
+    <title>Repair Photo</title>
+    <description>Yo</description>
+  </file>
+</CCGallery>
