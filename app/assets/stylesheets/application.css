@@ -14,10 +14,10 @@
  *= require bootstrap-responsive
  */
 
-a:link {color:#FFF !important;}      /* unvisited link */
-a:visited {color:#FFF;}  /* visited link */
-a:hover {color:#FFF;}  /* mouse over link */
-a:active {color:#FFF;}  /* selected link */
+a:link    {color:#ffffff;}  /* unvisited link */
+a:visited {color:#ffffff;}  /* visited link */
+a:hover   {color:#ffffff;}  /* mouse over link */
+a:active  {color:#ffffff;}  /* selected link */
 
 html, body {
   background-color: #ee1c25 !important;

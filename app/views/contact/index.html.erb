@@ -16,10 +16,10 @@
 <div class='row margin-top40px'>
   <div class='span6'>
     <div class='black-box shadow padding10px'>
-      <%= form_tag(:controller => 'home', :action => 'send_quote', :method => 'post') do%>
+      <%= form_tag(:controller => 'contact', :action => 'contact_via_email', :method => 'post') do%>
         <%= text_field_tag 'email', nil, :placeholder => 'e-mail address' %>
         <%= text_field_tag 'name', nil, :placeholder => 'full name' %>
-        <%= text_field_tag 'phone number', nil, :placeholder => 'phone number' %>
+        <%= text_field_tag 'phonenumber', nil, :placeholder => 'phone number' %>
         <%= text_area_tag 'body' %>
         <%= submit_tag 'Submit' %>
       <%end%>
